@@ -1,0 +1,16 @@
+name: GitHub Actions Demo
+
+on: workflow_dispatch:
+     push: 
+        branches: [main] 
+        
+        
+        jobs:
+        
+            build: 
+            
+               runs-on: ubuntu-latest
+                  environment:
+                      name: production_environment
+                      url: https://github.com
+                      
